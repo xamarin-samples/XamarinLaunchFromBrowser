@@ -15,13 +15,13 @@ using Windows.UI.Xaml.Navigation;
 
 namespace XamarinFormsLaunchFromBrowser.Windows
 {
-	public sealed partial class MainPage
-	{
-		public MainPage()
-		{
-			this.InitializeComponent();
+    public sealed partial class MainPage
+    {
+        public MainPage()
+        {
+            this.InitializeComponent();
 
-			LoadApplication(new XamarinFormsLaunchFromBrowser.App());
-		}
-	}
+            LoadApplication(new XamarinFormsLaunchFromBrowser.App());
+        }
+    }
 }

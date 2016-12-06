@@ -53,3 +53,9 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
     }
 }
 ```
+
+## sample-page.html
+```html
+<a href="hogeapp://main">Launch hogeapp (no parameter)</a>
+<a href="hogeapp://main?param1=🍣XYZ🍣">Launch hogeapp (param1 = 🍣XYZ🍣)</a>
+```

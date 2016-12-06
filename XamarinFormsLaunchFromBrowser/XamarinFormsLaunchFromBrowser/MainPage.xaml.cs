@@ -9,9 +9,13 @@ namespace XamarinFormsLaunchFromBrowser
 {
     public partial class MainPage : ContentPage
     {
+        public static string LaunchParameterString = "NO PARAMETER";
+
         public MainPage()
         {
             InitializeComponent();
+
+            MainLabel.Text = LaunchParameterString;
         }
     }
 }

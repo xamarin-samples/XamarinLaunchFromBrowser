@@ -30,6 +30,20 @@ namespace XamarinFormsLaunchFromBrowser.Droid
 
             base.OnCreate(bundle);
 
+            // 起動時パラメータ取得
+            if (Intent.ActionView.Equals(Intent.Action))
+            {
+                Android.Net.Uri uri = Intent.Data;
+                if (uri != null)
+                {
+                    string param1 = uri.GetQueryParameter("param1");
+                    if (!string.IsNullOrEmpty(param1))
+                    {
+                        MainPage.LaunchParameterString = param1;
+                    }
+                }
+            }
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:XamarinFormsLaunchFromBrowser"
              x:Class="XamarinFormsLaunchFromBrowser.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+	<Label x:Name="MainLabel" Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" FontSize="Large" />
 
 </ContentPage>
